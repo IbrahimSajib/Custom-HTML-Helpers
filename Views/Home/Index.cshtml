@@ -1,0 +1,13 @@
+﻿@using Project_01.CustomHTMLHelpers
+@{
+    ViewData["Title"] = "Home Page";
+    var currentDateTime = DateTime.Now;
+}
+
+<div class="text-center">
+    <h1 class="display-4 alert alert-info">Home Page</h1>
+</div>
+<p>Current Date-Time = @currentDateTime</p>
+<p>Current Date = @Html.ToDateddMMMyyyy(currentDateTime)</p>
+<p>Current Time = @Html.ToTimehhmmss(currentDateTime)</p>
+<p>Current Date = @Html.ToDateddMMyyyy(currentDateTime)</p>
